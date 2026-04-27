@@ -125,10 +125,10 @@ nav {
 
   footer {
     padding: 16px;
-    border: 1px solid #004d00
+    border: 1px solid #004d00;
     clear: both;
-    width: 100%
-  }
+    width: 100%;
+}
 
   nav {
     position: fixed;
