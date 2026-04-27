@@ -118,10 +118,26 @@ nav {
     gap: 20px;
   }
 
-  header, nav, main, footer{
+  header, main{
     padding: 16px;
     border: 1px solid #004d00
   }
+
+  footer {
+    padding: 16px;
+    border: 1px solid #004d00
+    clear: both;
+    width: 100%
+  }
+
+  nav {
+    position: fixed;
+    height: 100vh;
+    border-right: 2px solid #004d00; 
+    border-bottom: none; 
+    border-top: none;
+    border-left: none;
+}
 
   header {
     grid-column: 1/3;
