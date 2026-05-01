@@ -3,8 +3,8 @@ body{
     line-height: 1.6;
     background-color:#ecd9c6;
 
-    margin-left: 100px;
-    margin-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 h1{
@@ -85,7 +85,7 @@ nav {
 
     justify-content: flex-start;
     align-items: flex-start; 
-    width: 100px;
+    width: 200px;
     height: 100vh;
   
     padding: 40px;
@@ -111,8 +111,9 @@ nav {
   .grid-layout{
     display: grid;
     grid-template-columns: 200px 1fr;
-    gap: 20px;
+    column-gap: 20px;
     align-items: start;
+    width: 100%;
   }
 
   header, main{
@@ -128,7 +129,6 @@ nav {
 }
 
   nav {
-    position: fixed;
     height: 100vh;
     border-right: 2px solid #004d00; 
     border-bottom: none; 
