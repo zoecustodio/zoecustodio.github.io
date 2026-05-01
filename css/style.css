@@ -78,9 +78,6 @@ section {
 }
 
 nav {
-    position: fixed;
-    left: 0;
-    top: 0;
     display: flex;
 
     flex-direction: column;
@@ -98,7 +95,6 @@ nav {
     gap: 24px;
     
     background-color: #ecd9c6;
-    z-index: 1000;
   }
 
   .card-container {
@@ -113,9 +109,10 @@ nav {
     border: 5px solid #2c3e50;
   }
   .grid-layout{
-    display: block;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 200px 1fr;
     gap: 20px;
+    align-items: start;
   }
 
   header, main{
