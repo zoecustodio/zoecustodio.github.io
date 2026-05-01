@@ -3,7 +3,7 @@ body{
     line-height: 1.6;
     background-color:#ecd9c6;
 
-    margin-left: 200px;
+    margin-left: 100px;
     margin-right: 20px;
 }
 
@@ -88,7 +88,7 @@ nav {
 
     justify-content: flex-start;
     align-items: flex-start; 
-    width: 200px;
+    width: 100px;
     height: 100vh;
   
     padding: 40px;
