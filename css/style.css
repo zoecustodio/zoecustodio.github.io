@@ -1,10 +1,32 @@
-body{
-    font-family:  Georgia, serif;
-    line-height: 1.6;
-    background-color:#ecd9c6;
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  background-color: #ecd9c6;
+  margin: 0;
+  padding: 0;
+}
 
-    margin-left: 0px;
-    margin-right: 0px;
+.grid-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr; /* Lane 1 is sidebar, Lane 2 is text */
+  width: 100%;
+  margin: 0;
+}
+
+header {
+  grid-column: 1 / 3;
+  padding: 20px;
+}
+
+nav {
+  grid-column: 1 / 2;
+  background-color: #ecd9c6;
+  border-right: 2px solid #004d00;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 100vh; /* Keeps the sidebar color all the way down */
 }
 
 h1{
@@ -77,25 +99,7 @@ section {
     margin-bottom: 32px;
 }
 
-nav {
-    display: flex;
 
-    flex-direction: column;
-    align-items: flex-start;
-
-    justify-content: flex-start;
-    align-items: flex-start; 
-    width: 200px;
-    height: 100vh;
-  
-    padding: 40px;
-    padding-top: 20px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    gap: 24px;
-    
-    background-color: #ecd9c6;
-  }
 
   .card-container {
     display: flex;
@@ -108,54 +112,18 @@ nav {
     padding: 20px;
     border: 5px solid #2c3e50;
   }
-  .grid-layout{
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    grid-template-rows: auto 1fr auto;
-    column-gap: 20px;
-    align-items: start;
-    width: 100%;
-  }
-
-  header, main{
-    padding: 16px;
-    border: 0px solid #004d00
-  }
-
+  
   footer {
-    padding: 16px;
-    border: 1px solid #004d00;
-    clear: both;
-    width: 100%;
-}
-
-  nav {
-    height: 100vh;
-    border-right: 2px solid #004d00; 
-    border-bottom: none; 
-    border-top: none;
-    border-left: none;
-}
-
-  header {
-    grid-column: 1/3;
-    width: 100%;
-  }
-
-  nav{
-    grid-column: 1/2;
-    width: auto;
-    min-width: 180px;
+    grid-column: 1 / 3;
     padding: 20px;
-  }
+    border-top: 1px solid #004d00;
+}
 
-  main{ 
-    grid-column: 2/3
-  }
+main {
+  grid-column: 2 / 3;
+  padding: 40px; /* This creates the gap so text doesn't touch the sidebar */
+}
 
-  footer{
-    grid-column: 1/3;
-  }
 
   .bottom-content{
     clear: left;
@@ -172,20 +140,6 @@ nav {
     body {
         margin-left: 20px;
         margin-right: 20px;
-    }
-
-    .grid-layout{
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        gap: 20px;
-    }
-
-    nav{
-        grid-column: 1;
-    }
-
-    main{
-        grid-column: 1;
     }
 }
 
