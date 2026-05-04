@@ -1,4 +1,4 @@
-/* 1. Global Reset */
+
 * {
   box-sizing: border-box;
 }
@@ -11,18 +11,16 @@ body {
   padding: 0;
 }
 
-/* 2. The Grid Container */
+
 .grid-layout {
   display: grid;
-  /* This creates a 250px column for the nav and a flexible column for text */
   grid-template-columns: 250px 1fr;
   min-height: 100vh;
   width: 100%;
 }
 
-/* 3. The Header (Financial Literacy Title) */
 header {
-  grid-column: 1 / 3; /* Stretches across both columns */
+  grid-column: 1 / 3; 
   padding: 20px 40px;
 }
 
@@ -31,9 +29,9 @@ header h1 {
   margin: 0;
 }
 
-/* 4. The Sidebar (The Menu) */
+
 nav {
-  grid-column: 1 / 2; /* Stays in the left lane */
+  grid-column: 1 / 2; 
   background-color: #ecd9c6;
   border-right: 2px solid #004d00;
   padding: 40px 20px;
@@ -48,14 +46,14 @@ nav a {
   color: blue;
 }
 
-/* 5. The Main Content (The Missing Text) */
+
 main {
-  grid-column: 2 / 3; /* Stays in the right lane */
+  grid-column: 2 / 3; 
   padding: 20px 40px;
   background-color: transparent;
 }
 
-/* 6. Formatting your boxes/sections */
+
 section {
   margin-bottom: 30px;
   padding: 20px;
@@ -63,7 +61,6 @@ section {
   background-color: #f2e6d9;
 }
 
-/* 7. Image Handling */
 img {
   max-width: 100%;
   height: auto;
