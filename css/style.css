@@ -15,13 +15,13 @@ body {
 .grid-layout {
   display: grid;
   grid-template-columns: 250px 1fr;
-  min-height: 100vh;
   width: 100%;
 }
 
 header {
   grid-column: 1 / 3; 
-  padding: 20px 40px;
+  padding: 20px;
+  background-color: #ecd9c6;
 }
 
 header h1 {
@@ -34,10 +34,10 @@ nav {
   grid-column: 1 / 2; 
   background-color: #ecd9c6;
   border-right: 2px solid #004d00;
-  padding: 40px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 nav a {
@@ -50,7 +50,6 @@ nav a {
 main {
   grid-column: 2 / 3; 
   padding: 20px 40px;
-  background-color: transparent;
 }
 
 
@@ -66,4 +65,10 @@ img {
   height: auto;
   display: block;
   margin: 20px 0;
+}
+
+footer {
+  grid-column: 1/3;
+  padding: 20px;
+  text-align: center;
 }
