@@ -72,3 +72,11 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.link-description {
+  margin-top: 5px;      
+  margin-bottom: 20px;  
+  font-size: 0.9rem;    
+  color: #444;         
+  display: block; 
+}      
