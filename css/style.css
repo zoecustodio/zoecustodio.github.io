@@ -63,7 +63,7 @@ section {
 img {
   max-width: 100%;
   height: auto;
-  display: block;
+  display: inline-block;
   margin: 20px 0;
 }
 
@@ -80,3 +80,14 @@ footer {
   color: #444;         
   display: block; 
 }      
+
+.float-left{
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  max-width: 300px;
+}
+
+.clearfix{
+  clear: both;
+}
